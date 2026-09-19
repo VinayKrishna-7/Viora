@@ -11,7 +11,7 @@
 ![Socket.io](https://img.shields.io/badge/Socket.io-010101?style=for-the-badge&logo=socket.io&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-**A next-generation, cinematic video and music streaming platform engineered with the MERN stack, Tailwind CSS, Redux Toolkit, and WebSockets.**
+**Viora is a full-stack video and music streaming platform built with the MERN stack. It supports local video uploads, YouTube-based discovery, creator tools, playlists, watch history, and real-time notifications.**
 
 [Interface Showcase](#-interface-showcase) • [Explore Features](#-core-features) • [Architecture](#-architecture) • [Getting Started](#-getting-started) • [API Documentation](#-api-endpoints) • [Docker Deployment](#-docker-deployment)
 
