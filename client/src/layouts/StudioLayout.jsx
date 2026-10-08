@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import UploadModal from '../components/video/UploadModal';
 import Button from '../components/ui/Button';
+import Logo from '../components/common/Logo';
 
 const navItems = [
   { name: 'Dashboard', path: '/studio', icon: LayoutDashboard, end: true },
@@ -49,19 +50,7 @@ export const StudioLayout = () => {
             {isMobileNavOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
 
-          <Link to="/studio" className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-violet-500 flex items-center justify-center shadow-md shadow-indigo-500/20">
-              <svg className="w-4 h-4 text-white fill-current ml-0.5" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
-            <span className="text-xl font-bold tracking-tight text-white font-display">
-              Vio<span className="text-indigo-400">ra</span>
-            </span>
-            <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-indigo-500/15 border border-indigo-500/30 text-indigo-300">
-              Studio
-            </span>
-          </Link>
+          <Logo to="/studio" badge="Studio" />
         </div>
 
         <div className="flex items-center gap-3">

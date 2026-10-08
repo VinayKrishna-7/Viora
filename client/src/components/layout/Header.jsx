@@ -20,6 +20,7 @@ import { toggleTheme } from '../../store/slices/themeSlice';
 import { logoutUser } from '../../store/slices/authSlice';
 import UploadModal from '../video/UploadModal';
 import NotificationDropdown from './NotificationDropdown';
+import Logo from '../common/Logo';
 
 export const Header = ({ onToggleSidebar }) => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -89,18 +90,7 @@ export const Header = ({ onToggleSidebar }) => {
           <Menu className="w-5 h-5" />
         </button>
 
-        <Link to="/" className="flex items-center gap-2.5 group focus:outline-none">
-          {/* Stylized Viora Geometric Icon */}
-          <div className="relative w-8 h-8 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-violet-500 flex items-center justify-center text-white shadow-md shadow-indigo-500/25 group-hover:scale-105 transition-transform duration-200">
-            <div className="w-0 h-0 border-t-[5px] border-t-transparent border-l-[9px] border-l-white border-b-[5px] border-b-transparent ml-0.5" />
-            <span className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-cyan-400 border border-[#090a10]" />
-          </div>
-
-          <div className="flex items-center font-bold tracking-tight text-xl">
-            <span className="text-white">Vio</span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-400">ra</span>
-          </div>
-        </Link>
+        <Logo />
       </div>
 
       {/* Center Section: Unified Modern Search Bar */}

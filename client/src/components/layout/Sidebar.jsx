@@ -21,6 +21,7 @@ import {
   Tv2,
   X
 } from 'lucide-react';
+import Logo from '../common/Logo';
 
 const discoverLinks = [
   { name: 'Discover', path: '/', icon: Home },
@@ -78,16 +79,7 @@ export const Sidebar = ({ isOpen, isMobile, onCloseMobile }) => {
         />
         <aside className="relative flex flex-col w-72 h-full bg-viora-surface border-r border-viora-border p-4 overflow-y-auto z-10 shadow-2xl">
           <div className="flex items-center justify-between px-2 py-2 border-b border-viora-border/60 mb-3">
-            <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-violet-500 flex items-center justify-center shadow-md shadow-indigo-500/20">
-                <svg className="w-4 h-4 text-white fill-current ml-0.5" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-              <span className="text-xl font-bold tracking-tight text-white font-display">
-                Vio<span className="text-indigo-400">ra</span>
-              </span>
-            </div>
+            <Logo to="/" />
             <button 
               onClick={onCloseMobile}
               className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-white/5 transition"

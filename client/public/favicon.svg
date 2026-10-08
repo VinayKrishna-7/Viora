@@ -1,4 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
-  <rect width="48" height="48" rx="12" fill="#ef4444"/>
+  <defs>
+    <linearGradient id="vioraBlueGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="12" fill="url(#vioraBlueGrad)"/>
   <polygon points="19,14 35,24 19,34" fill="#ffffff"/>
+  <circle cx="40" cy="8" r="3.5" fill="#22d3ee" stroke="#090a10" stroke-width="1.5"/>
 </svg>

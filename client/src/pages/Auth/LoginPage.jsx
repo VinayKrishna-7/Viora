@@ -5,6 +5,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { Mail, Lock, Eye, EyeOff, AlertCircle, ArrowRight } from 'lucide-react';
 import { loginUser, clearAuthError } from '../../store/slices/authSlice';
 import Button from '../../components/ui/Button';
+import Logo from '../../components/common/Logo';
 
 export const LoginPage = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -39,16 +40,9 @@ export const LoginPage = () => {
       <div className="w-full max-w-md p-8 sm:p-10 bg-viora-card/90 backdrop-blur-2xl border border-viora-border rounded-3xl shadow-2xl space-y-6 relative z-10">
         {/* Header Branding */}
         <div className="text-center space-y-2">
-          <Link to="/" className="inline-flex items-center gap-2.5 mb-2">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-violet-500 flex items-center justify-center shadow-lg shadow-indigo-500/25">
-              <svg className="w-5 h-5 text-white fill-current ml-0.5" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
-            <span className="text-2xl font-bold tracking-tight text-white font-display">
-              Vio<span className="text-indigo-400">ra</span>
-            </span>
-          </Link>
+          <div className="flex justify-center mb-2">
+            <Logo to="/" size="lg" />
+          </div>
           <h1 className="text-2xl font-bold text-slate-100 tracking-tight">Welcome Back</h1>
           <p className="text-xs text-slate-400">
             Sign in to access your channel, subscriptions, and library
